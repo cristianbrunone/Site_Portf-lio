@@ -1,0 +1,199 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span {
+    color: #7fffd4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.menu .active {
+    color: #7fffd4;
+}
+
+.menu a:hover {
+    font-weight: bold;
+    background-color: #7fffd4;
+    color: #191c32;
+    transition: ease-in .2s;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+span {
+    color: #7fffd4;
+}
+
+.download-cv {
+    padding: 10px 20px;
+    background-color: #7fffd4;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, 69);
+}
+
+.download-cv:hover {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.main img {
+    width: 350px;
+    border: 2px solid #7fffd4;
+    height: 520px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.sobre img {
+    width: 100%;
+    grid-column: 1/5;
+    border: 2px solid #7fffd4;
+}
+
+.sobre-info {
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.sobre-info h2 {
+    font-size: 2em;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #7fffd4;
+    margin-top: 10px;
+    margin-bottom: 5em;
+}
+
+.sobre p {
+    margin-bottom: 1em;
+}
+
+.leia-mais {
+    padding: 10px 20px;
+    background-color: #7fffd4;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, 69);
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.contato h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contato button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+    background-color: #555;
+}
+
+.lista-cursos {
+    margin-top: 5px; /* Adiciona margem superior de 20 pixels */
+    padding: 30px; /* Adiciona preenchimento à esquerda de 20 pixels */
+}
+
+.lista-cursos li {
+    margin-bottom: 5px; /* Adiciona margem inferior de 10 pixels entre os itens da lista */
+    padding: 10px;
+}
+
+.habilidades h2 {
+    margin-bottom: 5px; /* Adiciona margem inferior de 20 pixels */
+    padding-left: 20px; /* Adiciona preenchimento à esquerda de 20 pixels */
+}
