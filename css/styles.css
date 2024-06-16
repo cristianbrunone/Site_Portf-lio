@@ -1,199 +1,136 @@
+/* Estilos generales */
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: #191c32;
-    color: #fff;
-}
-
-.brand {
-    margin-top: -7px;
-}
-
-.brand span {
-    color: #7fffd4;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 2em;
-}
-
-.menu {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-}
-
-.menu .active {
-    color: #7fffd4;
-}
-
-.menu a:hover {
+    background-color: #343a40; /* Fondo oscuro */
+    color: #f8f9fa; /* Texto claro */
+  }
+  
+  .navbar {
+    background-color: #212529; /* Fondo navbar más oscuro */
+    border-bottom: none; /* Sin borde inferior */
+  }
+  
+  .navbar-brand {
+    color: #7fffd4; /* Verde menta */
+    font-size: 1.5rem;
     font-weight: bold;
-    background-color: #7fffd4;
-    color: #191c32;
-    transition: ease-in .2s;
-}
-
-.main {
-    margin: 0 auto;
-    width: 80vw;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-
-h1 {
-    font-size: 3em;
-}
-
-span {
-    color: #7fffd4;
-}
-
-.download-cv {
-    padding: 10px 20px;
-    background-color: #7fffd4;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, 69);
-}
-
-.download-cv:hover {
-    background-color: #fff;
-    box-shadow: none;
-}
-
-.main img {
-    width: 350px;
-    border: 2px solid #7fffd4;
-    height: 520px;
-}
-
-.sobre {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    width: 100vw;
-    align-items: center;
-}
-
-.sobre img {
-    width: 100%;
-    grid-column: 1/5;
-    border: 2px solid #7fffd4;
-}
-
-.sobre-info {
-    grid-column: 5/10;
-    padding: 3em;
-}
-
-.sobre-info h2 {
-    font-size: 2em;
-}
-
-.divider {
-    height: 4px;
-    width: 60px;
-    background-color: #7fffd4;
-    margin-top: 10px;
-    margin-bottom: 5em;
-}
-
-.sobre p {
-    margin-bottom: 1em;
-}
-
-.leia-mais {
-    padding: 10px 20px;
-    background-color: #7fffd4;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgb(102, 231, 200, 69);
-}
-
-.contato {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-}
-
-.contato h2 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
+    text-decoration: none;
+    border-bottom: none; /* Asegúrate de que esta línea esté presente y no se sobrescriba */
+    align-items: center; /* Alinear elementos verticalmente */
+  }
+  
+  
+  .navbar-brand span {
+    margin-left: 5px; /* Espacio entre C y B */
+    border-bottom: none; 
+  }
+  
+  .navbar-nav {
+    display: flex; /* Mostrar elementos en una fila */
+    align-items: center; /* Alinear elementos verticalmente */
+    justify-content: center; /* Centrar elementos horizontalmente */
+    margin-top: 10px; /* Espacio arriba */
+    list-style-type: none;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Espacio entre elementos */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff; /* Blanco */
+    font-weight: bold;
+    padding: 10px 15px; /* Espaciado interno */
+    transition: color 0.3s;
+    text-decoration: none; /* Eliminar subrayado */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #7fffd4; /* Verde menta al pasar el mouse */
+  }
+  
+  .main {
+    background-color: #495057; /* Fondo principal más oscuro */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Sombra suave */
+  }
+  
+  .info-content {
+    text-align: center;
+  }
+  
+  .info-content h1 {
+    font-size: 3.5rem;
+    color: #fff; /* Color principal del texto */
+  }
+  
+  .info-content p {
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary {
+    background-color: #7fffd4; /* Verde menta */
+    border-color: #7fffd4;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6dd5c1; /* Verde menta más oscuro al pasar el mouse */
+    border-color: #6dd5c1;
+  }
+  
+  .main img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #7fffd4; /* Borde verde menta */
+    border-radius: 10px;
+  }
+ /* Estilos para el formulario de contacto */
+.contato form {
+    text-align: left; /* Alinear el contenido del formulario a la izquierda */
 }
 
 .contato label {
-    display: block;
-    margin-bottom: 10px;
-    color: #555;
+    font-weight: bold;
+    display: block; /* Cambiar a bloque para que los labels ocupen toda la línea */
 }
 
-.contato input,
+.contato .form-group {
+    margin-bottom: 20px; /* Espacio entre los elementos form-group */
+}
+
+.contato .form-control {
+    background-color: #343a40; /* Color de fondo más oscuro para los campos de entrada */
+    color: #fff; /* Color del texto en los campos de entrada */
+    border-color: #7fffd4; /* Color del borde */
+}
+
+.contato .form-control:focus {
+    background-color: #495057; /* Color de fondo al enfocar los campos de entrada */
+}
+
 .contato textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
+    min-height: 150px; /* Altura mínima para el área de texto */
 }
 
-.contato button {
-    background-color: #333;
-    color: #fff;
-    border: none;
+.contato button[type="submit"] {
+    background-color: #7fffd4; /* Verde menta */
+    border-color: #7fffd4;
     padding: 10px 20px;
-    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s, border-color 0.3s;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.contato button:hover {
-    background-color: #555;
-}
-
-.lista-cursos {
-    margin-top: 5px; /* Adiciona margem superior de 20 pixels */
-    padding: 30px; /* Adiciona preenchimento à esquerda de 20 pixels */
-}
-
-.lista-cursos li {
-    margin-bottom: 5px; /* Adiciona margem inferior de 10 pixels entre os itens da lista */
-    padding: 10px;
-}
-
-.habilidades h2 {
-    margin-bottom: 5px; /* Adiciona margem inferior de 20 pixels */
-    padding-left: 20px; /* Adiciona preenchimento à esquerda de 20 pixels */
+.contato button[type="submit"]:hover {
+    background-color: #6dd5c1; /* Verde menta más oscuro al pasar el mouse */
+    border-color: #6dd5c1;
 }
